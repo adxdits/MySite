@@ -1,66 +1,138 @@
 ---
-title: 'EcoBuddy: Sustainable Living App'
-description: EcoBuddy is a mobile app that gamifies sustainable living. Users can set eco-friendly goals, track their carbon footprint, and earn virtual rewards for adopting environmentally conscious habits.
-publishDate: 'Jan 02 2024'
+title: Tower Defense Game using OpenGL
+
+description: This web application is a visually captivating tower defense game built using OpenGL, designed to deliver an engaging and strategic gaming experience.
+publishDate: 'April 28 2024'
 seo:
   image:
-    src: '/project-1.jpg'
-    alt: Project preview
+    src: '/game.png'
 ---
 
-![Project preview](/project-1.jpg)
+![Project preview](https://github.com/adxdits/OpenGl-game/blob/main/screenshots/towers.png?raw=true)
+<a href="https://github.com/adxdits/OpenGl-game/" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: #fff; background-color: #007bff; text-align: center; text-decoration: none; border-radius: 5px;">Check it on Github</a>
 
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+---
 
 **Project Overview:**
-EcoBuddy is a revolutionary mobile application designed to make sustainable living accessible, engaging, and rewarding. With a focus on gamification and real-world impact, EcoBuddy encourages users to adopt eco-friendly habits, reduce their carbon footprint, and contribute to a healthier planet.
+**Defender’s Realm** is a visually captivating tower defense game built using OpenGL, designed to deliver an engaging and strategic gaming experience. This web application challenges users to protect their realm from waves of enemies by strategically placing towers and utilizing a range of defensive strategies within a richly detailed virtual environment.
 
 ## Objectives
 
-1. Develop a user-friendly mobile app that motivates individuals to adopt sustainable practices in their daily lives.
-2. Utilize gamification elements to make sustainable living fun and interactive.
-3. Provide educational resources and personalized challenges to empower users to make informed eco-conscious decisions.
+1. Develop a tower defense game that leverages OpenGL to deliver stunning graphics and smooth gameplay.
+2. Create a diverse range of towers, enemies, and levels to provide players with a strategic and engaging challenge.
+3. Ensure the game mechanics and visuals combine to create a compelling experience that keeps players invested in defending their realm.
 
 ## Features
 
-1. **EcoScore and Challenges:**
+1. **Stunning 3D Graphics:**
 
-- Users are assigned an EcoScore based on their sustainable activities and choices.
-- Daily and weekly challenges encourage users to adopt new habits and compete with friends or the community to earn EcoPoints.
+- **Defender’s Realm** utilizes OpenGL to render high-quality 3D environments, allowing for immersive and visually impressive gameplay.
+- The game features intricate level designs and detailed tower and enemy models to enhance the strategic depth and visual appeal.
 
-2. **Personalized Eco-Goals:**
+2. **Diverse Tower Types and Upgrades:**
 
-- Users can set and track personalized eco-goals, such as reducing plastic usage, conserving water, or choosing eco-friendly transportation.
-- The app provides tips and suggestions to help users achieve their goals.
+- Players can choose from a variety of towers, each with unique abilities and attributes.
+- Towers can be upgraded with different enhancements, allowing for strategic customization and adaptation to various enemy types.
 
-3. **Green Rewards Marketplace:**
+3. **Challenging Enemy Waves:**
 
-- EcoPoints earned through challenges and sustainable actions can be redeemed in a virtual Green Rewards Marketplace.
-- The marketplace offers discounts on eco-friendly products, services, and even contributions to environmental causes.
+- The game includes a broad array of enemy types, each with distinct behaviors and strengths.
+- Players face increasingly difficult waves of enemies, requiring careful planning and adaptation to defend their realm effectively.
 
-4. **Community Hub:**
+4. **Interactive Level Design:**
 
-- A community feature allows users to connect, share their eco-friendly achievements, and inspire others.
-- Users can join local eco-groups, organize clean-up events, and collaborate on sustainability projects.
+- Levels are designed with multiple paths and strategic points for tower placement, offering numerous tactical possibilities.
+- Environmental elements and obstacles are integrated into the levels, adding layers of complexity to the defensive strategy.
 
-5. **EcoEducator AI Assistant:**
+5. **Progression and Achievements:**
 
-- An AI-powered assistant, EcoEducator, provides personalized eco-tips, facts, and information based on users' preferences and habits.
-- Users can chat with EcoEducator for instant advice on sustainable living.
+- Players can track their progress through various levels and achievements, with performance metrics and rewards for successful defense.
+- The game features a progression system that unlocks new towers, upgrades, and levels as players advance.
 
 ## Technology Stack
 
-- Frontend: React Native for cross-platform mobile app development.
-- Backend: Firebase for real-time data synchronization and user authentication.
-- Database: Firestore for scalable and flexible data storage.
-- AI Integration: Dialogflow for natural language processing and conversation with EcoEducator.
+- **Graphics Engine:** OpenGL for rendering 3D graphics and managing game visuals.
+- **Game Development Framework:** C++ with a focus on performance and real-time processing.
+- **Backend:** Node.js for handling game data synchronization and player interactions.
+- **Database:** MongoDB for storing player profiles, game progress, and leaderboard information.
 
-## Outcome
+## Gameplay Instructions
 
-EcoBuddy has successfully created a community of environmentally conscious individuals who actively participate in sustainable living practices. The app not only educates and motivates users but also provides tangible rewards for their commitment to a greener lifestyle, fostering a positive impact on the environment.
+1. **Starting the Game:**
 
-## Client Testimonial
+   - Once in the menu, the player must press "E" to start the game.
+   - Players can begin placing towers on the map by entering "construction" mode by pressing "T". Towers can only be placed on empty spaces outside the path. Each tower costs 5 coins to build.
 
-> We couldn't be happier with the results delivered by Ethan Donovan. From the initial concept discussions to the final product, their responsiveness and collaborative approach were impressive. Our startup's website now stands out, thanks to their creative input and commitment to excellence.
+2. **Enemy Waves:**
 
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+   - Enemies will appear at regular intervals and follow a predefined path.
+   - If enemies reach the base at the end of the path, they will start attacking it, causing it to lose health points. The game ends if the base’s health points reach 0.
+
+3. **Game Controls:**
+   - The player can pause the game at any time by pressing "P".
+   - To quit the game, press "Q".
+
+## Code Structure
+
+The code is divided into multiple classes, each representing a part of the application. The core of the application is handled by the `Map` class, which contains a significant portion of the logic, such as the list of towers, enemies, and map loading and rendering.
+
+```cpp
+class Map {
+
+    public:
+
+        static const int SCALE = 60; // Each square is 60 px side
+
+        int width;
+        int height;
+
+        int coins = 100;
+        int lives = 100;
+
+        int xCursor;
+        int yCursor;
+
+        double elapsedTime = 0.0;
+
+        double enemyTimer;
+
+        bool towerMode = false;
+
+        glm::vec3 inColor;
+        glm::vec3 outColor;
+        glm::vec3 pathColor;
+
+        // Matrix of squares using vector of vectors
+        std::vector<std::vector<Square>> squares;
+        std::vector<Tower> towers;
+        std::vector<Enemy> enemies;
+        Graph graph;
+
+        /*
+         * Texture
+         */
+        GLuint grassTexture {};
+        GLuint pathTexture {};
+        GLuint inTexture {};
+        GLuint outTexture {};
+        GLuint hammerTexture {};
+
+        bool validateItd(std::string itdPath);
+        void loadMapFromFile(std::string pngPath, std::string itdPath);
+        void loadGraphFromFile(std::string itdPath);
+        void loadTextures();
+
+        void setup(std::string pngPath, std::string itdPath);
+
+        void switchTowerMode();
+        void placeTower();
+
+        void createEnemy();
+        void updateEnemies();
+
+        void render();
+        void updateHoverSquare();
+        void update();
+
+};
+```

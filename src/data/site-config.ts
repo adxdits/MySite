@@ -92,7 +92,7 @@ const siteConfig: SiteConfig = {
         },
         {
             text: 'X/Twitter',
-            href: 'https://twitter.com/'
+            href: 'https://github.com/adxdits'
         }
     ],
     hero: {
