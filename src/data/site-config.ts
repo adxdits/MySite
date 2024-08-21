@@ -38,57 +38,57 @@ export type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
-    title: 'Dante',
-    subtitle: 'Minimal Astro.js theme',
-    description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
+    title: 'Adam almounayar',
+    subtitle: 'A Software Engineer',
+    description: 'Currently Working at Amadeus s.a.s',
     image: {
-        src: '/dante-preview.jpg',
+        src: '',
         alt: 'Dante - Astro.js and Tailwind CSS theme'
     },
     headerNavLinks: [
         {
             text: 'Home',
-            href: '/'
+            href: '/MySite/'
         },
         {
             text: 'Projects',
-            href: '/projects'
+            href: '/MySite/projects'
         },
         {
             text: 'Blog',
-            href: '/blog'
+            href: '/MySite/blog'
         },
         {
             text: 'Tags',
-            href: '/tags'
+            href: '/MySite/tags'
         }
     ],
     footerNavLinks: [
         {
             text: 'About',
-            href: '/about'
+            href: '/MySite/about'
         },
         {
             text: 'Contact',
-            href: '/contact'
+            href: '/MySite/contact'
         },
         {
             text: 'Terms',
-            href: '/terms'
+            href: '/MySite/terms'
         },
         {
             text: 'Download theme',
-            href: 'https://github.com/JustGoodUI/dante-astro-theme'
+            href: 'https://adxdits.github.io/MySite/'
         }
     ],
     socialLinks: [
         {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
+            text: 'TikTok',
+            href: 'https://www.tiktok.com/@adxdit'
         },
         {
             text: 'Instagram',
-            href: 'https://instagram.com/'
+            href: 'https://www.instagram.com/adamxmounayar/'
         },
         {
             text: 'X/Twitter',
@@ -97,20 +97,20 @@ const siteConfig: SiteConfig = {
     ],
     hero: {
         title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm **Ethan Donovan**, a web developer at Amazing Studio, dedicated to the realms of collaboration and artificial intelligence. My approach involves embracing intuition, conducting just enough research, and leveraging aesthetics as a catalyst for exceptional products. I have a profound appreciation for top-notch software, visual design, and the principles of product-led growth. Feel free to explore some of my coding endeavors on <a href='https://github.com/JustGoodUI/dante-astro-theme'>GitHub</a> or follow me on <a href='https://twitter.com/justgoodui'>Twitter/X</a>.",
+        text: "I'm **Adam**, Hello, I am a Software Engineer based in Paris, currently working at Amadeus S.A.S. With a strong passion for web development and machine learning algorithms, I specialize in building innovative solutions that bridge the gap between cutting-edge technology and user-friendly applications. ",
         image: {
-            src: '/hero.jpeg',
+            src: '/public/me.png',
             alt: 'A person sitting at a desk in front of a computer'
         },
         actions: [
             {
-                text: 'Get in Touch',
-                href: '/contact'
+                text: 'Hire Me',
+                href: '/MySite/contact'
             }
         ]
     },
     subscribe: {
-        title: 'Subscribe to Dante Newsletter',
+        title: 'Subscribe to Adam Newsletter',
         text: 'One update per week. All the latest posts directly in your inbox.',
         formUrl: '#'
     },
