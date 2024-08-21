@@ -111,7 +111,7 @@ const siteConfig: SiteConfig = {
     },
     subscribe: {
         title: 'Subscribe to Adam Newsletter',
-        text: 'One update per week. All the latest posts directly in your inbox.',
+        text: 'One update pr week. All the latest posts directly in your inbox.',
         formUrl: '#'
     },
     postsPerPage: 8,
