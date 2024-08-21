@@ -99,7 +99,7 @@ const siteConfig: SiteConfig = {
         title: 'Hi There & Welcome to My Corner of the Web!',
         text: "I'm **Adam**, Hello, I am a Software Engineer based in Paris, currently working at Amadeus S.A.S. With a strong passion for web development and machine learning algorithms, I specialize in building innovative solutions that bridge the gap between cutting-edge technology and user-friendly applications. ",
         image: {
-            src: '/me.png',
+            src: '@/me.png',
             alt: 'A person sitting at a desk in front of a computer'
         },
         actions: [
