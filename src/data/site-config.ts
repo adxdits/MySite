@@ -43,7 +43,7 @@ const siteConfig: SiteConfig = {
     description: 'Currently Working at Amadeus s.a.s',
     image: {
         src: '',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
+        alt: 'Adam - Astro.js and Tailwind CSS theme'
     },
     headerNavLinks: [
         {
@@ -72,14 +72,7 @@ const siteConfig: SiteConfig = {
             text: 'Contact',
             href: '/MySite/contact'
         },
-        {
-            text: 'Terms',
-            href: '/MySite/terms'
-        },
-        {
-            text: 'Download theme',
-            href: 'https://adxdits.github.io/MySite/'
-        }
+        
     ],
     socialLinks: [
         {
@@ -91,7 +84,7 @@ const siteConfig: SiteConfig = {
             href: 'https://www.instagram.com/adamxmounayar/'
         },
         {
-            text: 'X/Twitter',
+            text: 'Github',
             href: 'https://github.com/adxdits'
         }
     ],
@@ -109,11 +102,7 @@ const siteConfig: SiteConfig = {
             }
         ]
     },
-    subscribe: {
-        title: 'Subscribe to Adam Newsletter',
-        text: 'One update pr week. All the latest posts directly in your inbox.',
-        formUrl: '#'
-    },
+    
     postsPerPage: 8,
     projectsPerPage: 8
 };
