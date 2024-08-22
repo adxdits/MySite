@@ -8,7 +8,7 @@ seo:
     src: ''
 ---
 
-[GO BUY THE COURSE](https://www.udemy.com/course/machinelearning-datascience-course/).
+[GO BUY THE COURSE](https://www.udemy.com/course/machinelearning-datascience-course/?referralCode=177AE5EBD0CF8D8D60DF).
 
 ## Course Structure
 
@@ -69,4 +69,4 @@ This course is divided into the following modules:
   - [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
 - **Datasets**: Various datasets used in this course can be found in the `datasets/` directory.
 
-[GO BUY THE COURSE](https://www.udemy.com/course/machinelearning-datascience-course/).
+[GO BUY THE COURSE](https://www.udemy.com/course/machinelearning-datascience-course/?referralCode=177AE5EBD0CF8D8D60DF).
